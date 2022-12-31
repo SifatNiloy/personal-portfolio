@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+import TopNav from '../src/components/TopNav'
 
 function App() {
   return (
     <div className="App">
       <h1>Hello Portfolio</h1>
-      {/* <Navbar></Navbar> */}
+      <TopNav></TopNav>
+      <button className='btn btn-primary'>bootstrap</button>
     </div>
   );
 }

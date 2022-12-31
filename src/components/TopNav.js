@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
-const Navbar = () => {
+const TopNav = () => {
     const [activeLink, setActiveLink]= useState('home')
     const [scrolled, setScrolled]= useState(false)
     useEffect(()=>{
@@ -45,4 +45,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default TopNav;
