@@ -7,7 +7,8 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <img src={imgUrl} alt='' />
         <div className="proj-txtx">
           <h4>{title}</h4>
-          <span>{description}</span>
+          <span>{description}</span> <br /> <br />
+          <button className="btn btn-primary">Visit Site</button>
         </div>
       </div>
     </Col>
