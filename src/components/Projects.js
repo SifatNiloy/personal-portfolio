@@ -6,6 +6,17 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
+import projImg9 from "../assets/img/project-img9.png";
+import projImg10 from "../assets/img/project-img10.png";
+import projImg11 from "../assets/img/project-img11.png";
+import projImg12 from "../assets/img/project-img12.png";
+import projImg13 from "../assets/img/project-img13.png";
+import projImg14 from "../assets/img/project-img14.png";
+import projImg15 from "../assets/img/project-img15.png";
+
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -52,43 +63,63 @@ export const Projects = () => {
   ];
   const projects2 = [
     {
-      title: "Doctors Portal",
-      description: "Online Appointment Service",
-      imgUrl: projImg1,
-      site: 'https://doctors-portal-348ac.web.app/'
+      title: "Copa America",
+      description: "Players and News",
+      imgUrl: projImg7,
+      site: 'https://agitated-mahavira-e10a73.netlify.app/'
     },
     {
-      title: "Doctorseba",
-      description: "Online Telemedicine Service",
-      imgUrl: projImg2,
-      site: 'https://doctorseba-d9db3.web.app/'
+      title: "Genius Car",
+      description: "Online Car service order",
+      imgUrl: projImg8,
+      site: 'https://genius-car-services-2-a514c.web.app/'
     },
     {
-      title: "Cameragraphy",
-      description: "Online Camera Shop",
-      imgUrl: projImg3,
-      site: 'https://cameragraphy-6ea25.web.app/'
+      title: "Fashion Community",
+      description: "Hire Fashion Models",
+      imgUrl: projImg9,
+      site: 'https://project-fashion-models.netlify.app/'
     },
     {
-      title: "Travelofun",
-      description: "Online Travel Booking",
-      imgUrl: projImg4,
-      site: 'https://travelofun-df17a.web.app/'
+      title: "Panda Commerce",
+      description: "Online Product Shop",
+      imgUrl: projImg10,
+      site: 'https://panda-commerce-sifat.netlify.app/'
     },
     {
-      title: "E-school",
+      title: "Honda CBR",
       description: "Online Course Services",
-      imgUrl: projImg5,
+      imgUrl: projImg11,
       site: 'https://e-school-sifat.netlify.app/'
     },
     {
-      title: "Netlearner",
-      description: "Online Course Services",
-      imgUrl: projImg6,
-      site: 'https://netlearner.netlify.app/'
+      title: "Bike Shop",
+      description: "Buy Bike and get Updates",
+      imgUrl: projImg12,
+      site: 'https://honda-cbr-ph2021.netlify.app/'
     },
   ];
-
+  const projects3 = [
+    {
+      title: "MacBook Pro",
+      description: "Order Macbook ",
+      imgUrl: projImg13,
+      site: 'https://macbook-js-assignment.netlify.app/'
+    },
+    {
+      title: "Book Archive",
+      description: "Search For Books",
+      imgUrl: projImg14,
+      site: 'https://books-archive-online.netlify.app/'
+    },
+    {
+      title: "Dollar Smart",
+      description: "Online Store",
+      imgUrl: projImg15,
+      site: 'https://dollarsmart.netlify.app/'
+    },
+    
+  ];
   return (
     <section className="project" id="project">
       <Container>
@@ -141,7 +172,18 @@ export const Projects = () => {
                         </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <Row>
+                          {
+                            projects3.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
