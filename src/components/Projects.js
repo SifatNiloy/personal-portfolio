@@ -28,7 +28,7 @@ export const Projects = () => {
       title: "Doctors Portal",
       description: "Online Appointment Service",
       imgUrl: projImg1,
-      site: 'https://doctors-portal-348ac.web.app/'
+      site: 'http://doctors-portal-client.sifatniloy.com/'
     },
     {
       title: "Doctorseba",
