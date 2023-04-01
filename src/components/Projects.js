@@ -15,6 +15,8 @@ import projImg12 from "../assets/img/project-img12.png";
 import projImg13 from "../assets/img/project-img13.png";
 import projImg14 from "../assets/img/project-img14.png";
 import projImg15 from "../assets/img/project-img15.png";
+import projImg16 from "../assets/img/project-img16.png";
+import projImg17 from "../assets/img/project-img17.png";
 
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -37,10 +39,22 @@ export const Projects = () => {
       site: 'https://doctorseba-d9db3.web.app/'
     },
     {
+      title: "Click2Buy",
+      description: "Ecommerce website",
+      imgUrl: projImg17,
+      site: 'http://click2buy.sifatniloy.com/'
+    },
+    {
       title: "Cameragraphy",
       description: "Online Camera Shop",
       imgUrl: projImg3,
       site: 'https://cameragraphy-6ea25.web.app/'
+    },
+    {
+      title: "GPT3",
+      description: "Online Store",
+      imgUrl: projImg16,
+      site: 'https://gpt3-1366.netlify.app/'
     },
     {
       title: "Travelofun",
@@ -48,18 +62,9 @@ export const Projects = () => {
       imgUrl: projImg4,
       site: 'https://travelofun-df17a.web.app/'
     },
-    {
-      title: "E-school",
-      description: "Online Course Services",
-      imgUrl: projImg5,
-      site: 'https://e-school-sifat.netlify.app/'
-    },
-    {
-      title: "Netlearner",
-      description: "Online Course Services",
-      imgUrl: projImg6,
-      site: 'https://netlearner.netlify.app/'
-    },
+
+
+
   ];
   const projects2 = [
     {
@@ -87,16 +92,16 @@ export const Projects = () => {
       site: 'https://panda-commerce-sifat.netlify.app/'
     },
     {
-      title: "Honda CBR",
+      title: "E-School",
       description: "Online Course Services",
-      imgUrl: projImg11,
+      imgUrl: projImg5,
       site: 'https://e-school-sifat.netlify.app/'
     },
     {
-      title: "Bike Shop",
-      description: "Buy Bike and get Updates",
-      imgUrl: projImg12,
-      site: 'https://honda-cbr-ph2021.netlify.app/'
+      title: "Netlearner",
+      description: "Online Course Services",
+      imgUrl: projImg6,
+      site: 'https://netlearner.netlify.app/'
     },
   ];
   const projects3 = [
@@ -105,6 +110,12 @@ export const Projects = () => {
       description: "Order Macbook ",
       imgUrl: projImg13,
       site: 'https://macbook-js-assignment.netlify.app/'
+    },
+    {
+      title: "Bike Shop",
+      description: "Buy Bike and get Updates",
+      imgUrl: projImg12,
+      site: 'https://honda-cbr-ph2021.netlify.app/'
     },
     {
       title: "Book Archive",
@@ -119,6 +130,7 @@ export const Projects = () => {
       site: 'https://dollarsmart.netlify.app/'
     },
     
+
   ];
   return (
     <section className="project" id="project">
