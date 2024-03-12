@@ -1,5 +1,5 @@
 // import Marquee from "react-fast-marquee";
-// import colorSharp from "../assets/img/color-sharp.png";
+import colorSharp from "../assets/img/color-sharp.png";
 import "./Skills2.css";
 // import meter1 from "../assets/img/meter1.svg";
 import Marquee from "react-fast-marquee";
@@ -81,7 +81,7 @@ const Skills2 = () => {
           </div>
         </div>
       </div>
-      {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
     // <Marquee>
     // </Marquee>

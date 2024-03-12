@@ -1,14 +1,27 @@
+.skill{
+    background-image: url('../assets/img/banner-bg2.jpg');
+}
+
+.skill-bx{
+    background-color: #708090;
+}
+
 .item {
   align-items: center;
   justify-content: center;
   margin: 20px;
   padding: 20px;
-  border: 1px solid green;
-  border-radius: 5px;
+  border: 2px solid green;
+  border-radius: 10px;
   box-shadow: 0 0 10px #000;
   width: 200px;
   height: 120px;
 }
 .item img {
-  max-width: 20%;
+  max-width: 30%;
+  max-height: 50%;
+}
+
+.item h5{
+    margin-top: 10px;
 }
