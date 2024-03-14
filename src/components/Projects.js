@@ -40,7 +40,7 @@ export const Projects = () => {
       title: "Cameragraphy",
       description: "Online Camera Shop",
       imgUrl: projImg3,
-      site: "https://cameragraphy-6ea25.web.app/",
+      site: "https://cameragraphy.sifatniloy.top/",
     },
     {
       title: "GPT3",
