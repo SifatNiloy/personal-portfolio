@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import getInTouch from "../assets/img/getInTouch.svg";
-
+import './Contact.css';
 export const Contact = () => {
   const formInitialDetails = {
     firstName: "",
