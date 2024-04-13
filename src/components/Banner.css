@@ -1,5 +1,6 @@
 
 /************ Banner Css ************/
+
 .banner {
     margin-top: 0;
     padding: 260px 0 100px 0;
@@ -10,6 +11,7 @@
   }
   .banner-left p{
     max-width: 90% ;
+    font-family: '';
   }
   .banner .tagline {
     font-weight: 900;
@@ -36,9 +38,10 @@
   }
   .banner p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif ;
     letter-spacing: 0.8px;
-    line-height: 1.5em;
+    line-height: 1.3em;
     width: 96%;
   }
   .banner button {

@@ -14,8 +14,8 @@ import html from "../assets/skills/html.svg";
 import css from "../assets/skills/css.svg";
 import javascript from "../assets/skills/javascript.svg";
 // import node from "../assets/skills/node.svg";
-// import express from "../assets/skills/express.svg";
-// import mongodb from "../assets/skills/mongodb.svg";
+import nextjs from "../assets/skills/nextJS.svg";
+import mongodb from "../assets/skills/mongoDB.svg";
 import mysql from "../assets/skills/mysql.svg";
 
 const Skills2 = () => {
@@ -26,7 +26,7 @@ const Skills2 = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p className="text-white">All the technolody I have worked with</p>
+              <p className="text-white">All the technolody I have worked with. Here, you'll find a showcase of the technologies I'm proficient in. Each box represents a tool or technology that I've mastered. </p>
               <Marquee>
                 <div className="item">
                   <img src={git} alt="Image1" />
@@ -44,18 +44,18 @@ const Skills2 = () => {
                   <img src={mysql} alt="Image3" />
                   <h5>Mysql</h5>
                 </div>
-                {/* <div className="item">
-                  <img src={node} alt="Image3" />
-                  <h5>Node</h5>
+                <div className="item">
+                  <img src={nextjs} alt="Image3" />
+                  <h5>nextJS</h5>
                 </div>
                 <div className="item">
-                  <img src={express} alt="Image3" />
-                  <h5>Express</h5>
+                  <img src={figma} alt="Image3" />
+                  <h5>Figma</h5>
                 </div>
                 <div className="item">
                   <img src={mongodb} alt="Image3" />
-                  <h5>Mongodb</h5> */}
-                {/* </div> */}
+                  <h5>Mongodb</h5>
+                </div>
                 <div className="item">
                   <img src={html} alt="Image3" />
                   <h5>HTML</h5>

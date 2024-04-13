@@ -63,7 +63,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className="banner-left"
+                  className="banner-left "
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
