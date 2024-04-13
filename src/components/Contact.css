@@ -2,6 +2,7 @@
 .contact {
     background-color: #4a2fbd; /* Change this to the desired color */
     padding: 60px 0 200px 0;
+    background-image: url("../assets/img/banner-bg2.jpg");
   }
   
   .contact img {

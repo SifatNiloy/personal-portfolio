@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
+import './Navbar.css'
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -56,7 +57,7 @@ export const NavBar = () => {
                 
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let's Connect</span></button>
+                <button className="btn"><span>Contact Me</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>

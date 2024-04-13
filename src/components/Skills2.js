@@ -26,7 +26,7 @@ const Skills2 = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>All the technolody I have worked with</p>
+              <p className="text-white">All the technolody I have worked with</p>
               <Marquee>
                 <div className="item">
                   <img src={git} alt="Image1" />
@@ -39,6 +39,10 @@ const Skills2 = () => {
                 <div className="item">
                   <img src={react} alt="Image3" />
                   <h5>React</h5>
+                </div>
+                <div className="item">
+                  <img src={mysql} alt="Image3" />
+                  <h5>Mysql</h5>
                 </div>
                 {/* <div className="item">
                   <img src={node} alt="Image3" />
