@@ -82,8 +82,8 @@
   }
   .proj-imgbx::before {
     content: "";
-    background: linear-gradient(90.21deg, #4CAF50 -5.91%, #1976D2 111.58%);
-    opacity: 0.85;
+    background: linear-gradient(90.21deg, #4cae4f -5.91%, #4aaf4d 111.58%);
+    opacity: 0.90;
     position: absolute;
     width: 100%;
     height: 0;
