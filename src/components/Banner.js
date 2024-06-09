@@ -85,6 +85,7 @@ export const Banner = () => {
                   <p className="text-xl text-white">
                   If you're looking for a dedicated team member who can bring creativity, expertise, and a can-do attitude to your projects, then I'm your person. Let's work together to achieve great things!
                   </p>
+                  <a href="https://drive.google.com/uc?export=download&id=12s6ESAvmIfRSKMuTbrrRfCAm_GpOvhhq" download="sifat's web developer resume.pdf" className="btn btn-primary text-white">Download Resume</a>
                   <a style={{ textDecoration: "none" }} href="#connect">
                   <button onClick={() => console.log("connect")}>
                     Contact Me <ArrowRightCircle size={25} /> 
