@@ -1,87 +1,90 @@
-import React, { useEffect, useState } from 'react';
-import { BsPersonWorkspace } from 'react-icons/bs';
-import graduation from '../assets/img/graduation-hats.svg'
-import background from '../assets/img/education-bg.png'
-import blur23 from '../assets/img/blur-23.svg'
+import React, { useEffect, useState } from "react";
+import { FaUserGraduate } from "react-icons/fa";
+import graduation from "../assets/img/graduation-hats.svg";
+import background from "../assets/img/education-bg.png";
+import "./Education.css";
 const Education = () => {
   const [educations, setEducations] = useState([]);
 
   useEffect(() => {
-    
-    fetch('/educations.json')
+    fetch("/educations.json")
       .then((response) => response.json())
       .then((data) => setEducations(data))
-      .catch((error) => console.error('Error fetching the educations:', error));
+      .catch((error) => console.error("Error fetching the educations:", error));
   }, []);
 
   return (
-    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <section
+      id="education"
+      className="education-section relative z-50 my-12 py-24 lg:my-24 "
+    >
       <img
         src={background}
         alt="Background"
-        className="absolute top-0 -z-10 w-full h-auto"
+        className="absolute top-0 left-0 w-full h-auto -z-10"
       />
-      <div className="flex justify-center -translate-y-[1px]">
-        <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full" />
-        </div>
-      </div>
-
-      <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+      <div className="text-center mb-8">
+        <div className="inline-flex items-center">
+          <span className="block w-16 lg:w-24 h-[2px] bg-[#e7e7e7]"></span>
+          {/* <span className="mx-4 px-5 py-2 text-lg lg:text-xl bg-[#1a1443] text-white rounded-md">
             Educations
-          </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          </span> */}
+          <h2 className="mx-4">Education</h2>
+          <span className="block w-16 lg:w-24 h-[2px] bg-[#e7e7e7]"></span>
+        </div>
+      </div>
+      <div className="flex justify-center mb-8">
+        <div className="w-3/4">
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
       </div>
 
-      <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-center lg:items-start">
-            <div className="w-3/4 h-3/4">
-              <img src={graduation} alt="Education Illustration" className="w-full h-auto" />
-            </div>
-          </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 px-4 lg:px-0">
+        <div className="flex justify-center lg:justify-end">
+          <img
+            src={graduation}
+            alt="Graduation Illustration"
+            className="w-2/3 lg:w-3/4 h-auto mr-4"
+          />
+        </div>
 
-          <div>
-            <div className="flex flex-col gap-6">
-              {educations.map((education) => (
-                <div key={education.id} className="relative p-3 bg-gray-800 rounded-lg shadow-lg">
-                  <img
-                    src={blur23}
-                    alt="Blur"
-                    className="absolute bottom-0 w-full opacity-80"
-                  />
-                  <div className="flex justify-center">
-                    <p className="text-xs sm:text-sm text-[#16f2b3]">
-                      {education.duration}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-x-8 px-3 py-5">
-                    <div className="text-violet-500 transition-all duration-300 hover:scale-125">
-                      <BsPersonWorkspace size={36} />
-                    </div>
-                    <div>
-                      <p className="text-base sm:text-xl mb-2 font-medium uppercase text-white">
-                        {education.title}
-                      </p>
-                      <p className="text-sm sm:text-base text-white">
-                        {education.institution}, {education.location}
-                      </p>
-                      <p className="text-sm sm:text-base text-white">
-                        Field of Study: {education.fieldOfStudy}
-                      </p>
-                    </div>
-                  </div>
+        <div className="flex flex-col gap-6 w-4/5">
+          {educations.map((education) => (
+            <div
+              key={education.id}
+              className="p-4 bg-customColor rounded-lg shadow-lg relative overflow-hidden"
+            >
+              {/* Conditional rendering for duration */}
+              {education.duration && (
+                <p className="text-xs lg:text-sm text-[#16f2b3] mb-2 text-center">
+                  {education.duration}
+                </p>
+              )}
+
+              {/* Conditional rendering for field of study */}
+              {education.fieldOfStudy && (
+                <p className="text-sm lg:text-base text-white text-center">
+                  Field of Study: {education.fieldOfStudy}
+                </p>
+              )}
+              <div className="flex items-center gap-x-4 mb-4">
+                <FaUserGraduate className="text-white text-3xl transition-transform duration-300 hover:scale-125" />
+                <div>
+                  <p className="text-lg lg:text-xl text-white font-medium uppercase mb-1">
+                    {education.title}
+                  </p>
+                  <p className="text-sm lg:text-base text-white">
+                    {education.institution}, {education.location}
+                  </p>
                 </div>
-              ))}
+              </div>
+
+              {/* <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div> */}
             </div>
-          </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

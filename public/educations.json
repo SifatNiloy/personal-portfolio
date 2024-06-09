@@ -3,25 +3,31 @@
       "id": 1,
       "title": "Masters of Science",
       "duration": "2023 - Present",
-      "institution": "United International University"
+      "institution": "United International University",
+      "location": "Dhaka",
+      "fieldOfStudy": "Computer Science"
     },
     {
       "id": 2,
-      "title": "Bachelor in Physics",
+      "title": "Bachelor of Sciences",
       "duration": "2016 - 2020",
-      "institution": "Dhaka College"
+      "institution": "Dhaka College",
+      "location": "Dhaka",
+      "fieldOfStudy": "Physics"
     },
     {
       "id": 3,
       "title": "Higher Secondary Certificate",
-      "duration": "2014 - 2016",
-      "institution": "Dhaka College"
+      "duration": "2016",
+      "institution": "Dhaka College",
+      "location": "Dhaka"
     },
     {
       "id": 4,
       "title": "Secondary School Certificate",
-      "duration": "2008 - 2018",
-      "institution": "Ideal School and College, Motijheel, Dhaka."
+      "duration": "2014",
+      "institution": "Ideal School and College",
+      "location": "Motijheel, Dhaka."
     }
   ]
   
