@@ -1,5 +1,6 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 
+import projImg1 from "../assets/img/project-img1.png";
 import projImg16 from "../assets/img/project-img16.png";
 import projImg17 from "../assets/img/project-img17.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -21,6 +22,12 @@ export const Projects = () => {
       site: "https://click2buy-client.sifatniloy.top/",
     },
 
+    {
+      title: "Tixify",
+      description: "Online Ticket Booking",
+      imgUrl: projImg1,
+      site: "https://tixify.sifatniloy.top/",
+    },
     {
       title: "Doctorseba",
       description: "Online Telemedicine Service",
