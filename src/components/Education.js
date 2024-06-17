@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaUserGraduate } from "react-icons/fa";
 import graduation from "../assets/img/graduation-hats.svg";
-import background from "../assets/img/education-bg.png";
-
+// import background from "../assets/img/education-bg.png";
+import './Education.css'
 const Education = () => {
   const [educations, setEducations] = useState([]);
 
@@ -16,17 +16,17 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="education-section relative z-50 my-12 py-24 lg:my-24"
+      className="education-section relative z-50 my-12 -pt-20 lg:my-24"
     >
-      <img
+      {/* <img
         src={background}
         alt="Background"
-        className="absolute top-0 left-0 w-full h-auto -z-20 -mt-24 opacity-20 animate-fadeIn"
-      />
-      <div className="text-center mb-8">
+        className="absolute top-0 left-0 w-full h-auto -z-10 -mt-24 opacity-20 animate-fadeIn"
+      /> */}
+      <div className="text-center mb-8 -mt-40">
         <div className="inline-flex items-center">
           <span className="block w-16 lg:w-24 h-[2px] bg-[#e7e7e7]"></span>
-          <h2 className="mx-4 text-2xl lg:text-3xl font-semibold animate-slideIn">Education</h2>
+          <h2 className="mx-4  text-2xl lg:text-3xl font-semibold animate-slideIn">Education</h2>
           <span className="block w-16 lg:w-24 h-[2px] bg-[#e7e7e7]"></span>
         </div>
       </div>
@@ -48,9 +48,10 @@ const Education = () => {
         <div className="flex flex-col gap-6 w-full lg:w-4/5 animate-fadeIn ">
           {educations.map((education) => (
             <div
-              key={education.id}
-              className="p-4 bg-[#003161] rounded-lg shadow-lg relative overflow-hidden transition-transform duration-300 hover:-translate-y-2"
-            >
+            key={education.id}
+            className="p-4 bg-[#003161] rounded-lg shadow-lg relative overflow-hidden transition-transform duration-300 hover:-translate-y-2 h-50 flex flex-col justify-between"
+          >
+          
               {education.duration && (
                 <p className="text-xs lg:text-sm text-[#16f2b3] mb-2 text-center animate-fadeIn">
                   {education.duration}

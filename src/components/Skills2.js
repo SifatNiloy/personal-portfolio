@@ -21,12 +21,17 @@ import mysql from "../assets/skills/mysql.svg";
 const Skills2 = () => {
   return (
     <section className="skill" id="skills">
-      <div className="container">
+      <div className="container py-24">
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p className="text-white">All the technolody I have worked with. Here, you'll find a showcase of the technologies I'm proficient in. Each box represents a tool or technology that I've mastered. </p>
+              <h2 className="text-4xl font-bold mb-6">Technical Skills</h2>
+              <p className="text-lg mb-12 text-white">
+                Here's a collection of the tools and technologies I’ve worked
+                with. Each one is a key part of my experience and highlights my
+                dedication to learning and improving as a developer. I use these
+                skills to create effective and high-quality software solutions.
+              </p>
               <Marquee>
                 <div className="item">
                   <img src={git} alt="Image1" />
@@ -85,7 +90,11 @@ const Skills2 = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="Images of technology logo"
+      />
     </section>
     // <Marquee>
     // </Marquee>
